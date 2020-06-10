@@ -23,6 +23,22 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+task angry {
+    println "angry: " + project.gradle.startParameter.projectProperties
+}
+
+afterEvaluate {
+    println "projectProperties: " + project.gradle.startParameter.projectProperties
+}
+
+task belong {
+    println "belong: " + project.gradle.startParameter.projectProperties
 }
 
 dependencies {
@@ -34,4 +50,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version"
+    implementation "com.squareup.okhttp3:okhttp:4.2.0"
 }

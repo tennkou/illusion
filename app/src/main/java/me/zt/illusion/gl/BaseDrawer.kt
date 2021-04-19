@@ -14,6 +14,7 @@ abstract class BaseDrawer {
 
     fun onSurfaceCreated(context: Context) {
         this.context = context
+        log("create")
         createInternal()
     }
 
@@ -29,10 +30,10 @@ abstract class BaseDrawer {
         onDraw()
     }
 
-    abstract fun getVertexShader() : String
-    abstract fun getFragmentShader() : String
-    open fun afterCreateProgram(){}
-    open fun onDraw(){ }
+    protected abstract fun getVertexShader() : String
+    protected abstract fun getFragmentShader() : String
+    protected open fun afterCreateProgram(){}
+    protected open fun onDraw(){ }
 
 
     /**********\

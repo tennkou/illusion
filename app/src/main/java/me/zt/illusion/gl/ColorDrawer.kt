@@ -62,15 +62,15 @@ class ColorDrawer constructor(private val imageView: ImageView) : VertexDrawer()
 
         drawVertex()
 
-        val buf = ByteBuffer.allocate(width * height * 4)
-        glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE, buf)
-        buf.rewind()
-        val bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
-        bmp.copyPixelsFromBuffer(buf)
-        log("glReadPixels ${bmp.width}, ${bmp.height}")
-
-        imageView.post {
-            imageView.setImageBitmap(bmp)
-        }
+//        val buf = ByteBuffer.allocate(width * height * 4)
+//        glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE, buf)
+//        buf.rewind()
+//        val bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+//        bmp.copyPixelsFromBuffer(buf)
+//        log("glReadPixels ${bmp.width}, ${bmp.height}")
+//
+//        imageView.post {
+//            imageView.setImageBitmap(bmp)
+//        }
     }
 }

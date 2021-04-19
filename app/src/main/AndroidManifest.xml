@@ -17,6 +17,7 @@
       </intent-filter>
     </activity>
       <activity android:name=".GLActivity" />
+      <activity android:name=".EglActivity" />
   </application>
 
 </manifest>

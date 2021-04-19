@@ -8,6 +8,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import me.zt.illusion.gl.ColorDrawer
 import me.zt.illusion.gl.ZTRenderer
+import kotlin.math.abs
 
 class GLActivity : AppCompatActivity() {
 
@@ -23,6 +24,8 @@ class GLActivity : AppCompatActivity() {
             })
             renderMode = RENDERMODE_WHEN_DIRTY
         }
+
+
     }
 
 }

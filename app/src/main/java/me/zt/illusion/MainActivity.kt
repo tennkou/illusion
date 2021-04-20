@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     findViewById<View>(R.id.button_2).setOnClickListener {
-      startActivity(Intent(this@MainActivity, EglActivity::class.java))
+      startActivity(Intent(this@MainActivity, BlurActivity::class.java))
     }
 
 //    test()

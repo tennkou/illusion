@@ -12,21 +12,21 @@
       android:id="@+id/button_1"
       android:layout_width="match_parent"
       android:layout_height="50dp"
-    android:background="@color/colorAccent"
+      android:background="#FFF4FF"
       android:layout_marginBottom="40dp"/>
 
   <TextView
       android:id="@+id/button_2"
       android:layout_width="match_parent"
       android:layout_height="50dp"
-      android:background="@color/colorAccent"
+      android:background="#FFF4FF"
       android:layout_marginBottom="40dp"/>
 
   <TextView
       android:id="@+id/button_3"
       android:layout_width="match_parent"
       android:layout_height="50dp"
-      android:background="@color/colorAccent"
+      android:background="#FFF4FF"
       android:layout_marginBottom="40dp"/>
 
 </LinearLayout>

@@ -57,6 +57,6 @@ class EglActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        eglHelper.destoryEgl()
+        eglHelper.destroyEgl()
     }
 }

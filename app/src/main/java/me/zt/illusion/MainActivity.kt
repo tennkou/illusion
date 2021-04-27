@@ -21,18 +21,17 @@ class MainActivity : AppCompatActivity() {
       startActivity(Intent(this@MainActivity, BlurActivity::class.java))
     }
 
-//    test()
+    findViewById<View>(R.id.button_3).setOnClickListener {
+      startActivity(Intent(this, ClipActivity::class.java))
+    }
+
+    test()
   }
 
 
   private fun test() {
-    val count = 50
-    var value = -2f
-    val step = 0.1f
-    (0 until count).forEach { index->
-      value += step
-      log("x:$value,  y:${sCurve(value)}")
-    }
+//    val a = "保存%1$s%";
+
   }
 
   private fun sCurve(x: Float) : Float {

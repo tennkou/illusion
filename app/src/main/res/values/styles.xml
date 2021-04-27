@@ -8,4 +8,30 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+  <style name="MyTheme" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="android:windowIsTranslucent">true</item>
+
+    <item name="bottomSheetStyle">@style/MyBottomSheet</item>
+<!--    <item name="android:windowFrame">#00000000</item>-->
+    <!-- 边框 -->
+    <item name="android:windowIsFloating">true</item>
+<!--    &lt;!&ndash; 是否浮现在activity之上 &ndash;&gt;-->
+<!--    &lt;!&ndash; 半透明 &ndash;&gt;-->
+    <item name="android:windowNoTitle">true</item>
+<!--    &lt;!&ndash; 无标题 &ndash;&gt;-->
+    <item name="android:background">#00000000</item>
+<!--    &lt;!&ndash; 背景色 &ndash;&gt;-->
+<!--    <item name="android:windowBackground">#ffffff</item>-->
+<!--    &lt;!&ndash; 背景透明 &ndash;&gt;-->
+    <item name="android:backgroundDimEnabled">true</item>
+<!--    &lt;!&ndash; 模糊 &ndash;&gt;-->
+<!--    <item name="android:windowFullscreen">true</item>-->
+  </style>
+
+
+  <style name="MyBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@android:color/transparent</item>
+
+  </style>
+
 </resources>

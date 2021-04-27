@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#FF004400"
+  android:orientation="vertical">
+
+  <me.zt.illusion.widget.ClipCornerFrameLayout
+    android:layout_width="300dp"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:layout_weight="1">
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/photo2"/>
+
+  </me.zt.illusion.widget.ClipCornerFrameLayout>
+
+  <me.zt.illusion.widget.XfermodeCornerFrameLayout
+    android:layout_width="300dp"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:layout_weight="1">
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/photo2"/>
+
+  </me.zt.illusion.widget.XfermodeCornerFrameLayout>
+
+
+  <me.zt.illusion.widget.ZtRoundImageView
+    android:layout_width="300dp"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:layout_weight="1"
+    android:src="@drawable/photo2"
+    android:scaleType="centerCrop"/>
+
+
+</LinearLayout>

@@ -34,4 +34,19 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta05'
+
+
+
+//    val card_view = "androidx.cardview:cardview:1.0.0"
+//    val constraint_layout = "androidx.constraintlayout:constraintlayout:2.0.4"
+//    val percent_layout = "androidx.percentlayout:percentlayout:1.0.0"
+//    val recycler_view = "androidx.recyclerview:recyclerview:1.1.0-beta05"
+//    val viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
 }

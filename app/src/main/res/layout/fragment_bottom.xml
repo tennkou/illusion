@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.zt.illusion.widget.ClipCornerFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="#cceeee"-->
+<!--        app:layout_behavior="@string/download_bottom_sheet_behavior"/>-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        android:background="#cceeee"/>
+
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/pager"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="400dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:background="#cceeee"/>-->
+
+</me.zt.illusion.widget.ClipCornerFrameLayout>

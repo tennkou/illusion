@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">illusion</string>
+  <string name="download_bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.DownloadBottomSheetBehavior</string>
+
 </resources>

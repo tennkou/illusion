@@ -32,7 +32,7 @@ import me.zt.illusion.util.JavaUtil
  *
  * ViewOutlineProvider 形状只能是 rect、oval、round rect
  *
- * xfermode, 需要判断版本 （支持抗锯齿, 抗锯齿效果不如 ShaderCornerFrameLayout），性能较好（关闭硬件加速性能下降）
+ * xfermode, 需要判断版本 （支持抗锯齿, 抗锯齿效果不如 ShaderCornerFrameLayout），性能较好（使用 LAYER_TYPE_SOFTWARE 性能下降）
  * @see XfermodeCornerFrameLayout
  *
  * @see https://stackoverflow.com/questions/51538443/xfermode-in-android-p-beta

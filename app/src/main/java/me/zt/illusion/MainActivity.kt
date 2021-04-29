@@ -3,7 +3,14 @@ package me.zt.illusion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.functions.Cancellable
+import io.reactivex.functions.Consumer
+import io.reactivex.internal.disposables.CancellableDisposable
+import io.reactivex.schedulers.Schedulers
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
@@ -25,12 +32,41 @@ class MainActivity : AppCompatActivity() {
       startActivity(Intent(this, ClipActivity::class.java))
     }
 
+
     test()
   }
 
 
   private fun test() {
 //    val a = "保存%1$s%";
+
+    val handler = Handler()
+
+//    Observable.fromCallable()
+    val disposable = Observable.just(10)
+      .flatMap {
+        Observable.create<String> { emitter ->
+          val r = Runnable {
+            log("emitter onNext $it")
+            emitter.onNext("$it")
+          }
+          emitter.setDisposable(CancellableDisposable(Cancellable {
+            log("emitter dispose")
+            handler.removeCallbacks(r)
+          }))
+          handler.postDelayed(r, 5000)
+        }
+      }
+      .subscribeOn(Schedulers.io())
+      .observeOn(AndroidSchedulers.mainThread())
+      .subscribe({
+        log(it)
+      }, {
+        log("error$it")
+      })
+    handler.postDelayed({
+      disposable.dispose()
+    } , 1500)
 
   }
 

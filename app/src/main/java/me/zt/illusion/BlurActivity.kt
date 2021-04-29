@@ -38,8 +38,8 @@ class BlurActivity : AppCompatActivity() {
     }
 
     private fun loadBitmap() : Bitmap {
-        val maxW = 100
-        val maxH = 100
+        val maxW = 1000
+        val maxH = 1000
         val startTime = System.currentTimeMillis()
         val option = BitmapFactory.Options()
         option.inJustDecodeBounds = true

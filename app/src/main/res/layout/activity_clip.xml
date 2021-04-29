@@ -36,14 +36,4 @@
   </me.zt.illusion.widget.XfermodeCornerFrameLayout>
 
 
-  <me.zt.illusion.widget.ZtRoundImageView
-    android:layout_width="300dp"
-    android:layout_height="0dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="30dp"
-    android:layout_weight="1"
-    android:src="@drawable/photo2"
-    android:scaleType="centerCrop"/>
-
-
 </LinearLayout>
